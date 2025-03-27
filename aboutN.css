@@ -1,0 +1,320 @@
+
+/* General styles for the navbar and footer */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    overflow-x: hidden;
+  }
+  
+  /* Navbar */
+  .navbar {
+    position: fixed;
+    width: 100%;
+    padding: 0.5em 1em;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2em;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 0.5em 1em;
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    background: #ff6347;
+    color: white;
+    border-radius: 4px;
+  }
+  
+  .hamburger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 25px;
+  }
+  
+  .hamburger .bar {
+    background-color: black;
+    height: 4px;
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  .nav-links.show {
+    display: flex;
+    background-color: #333;
+    flex-direction: column;
+    align-items: left;
+    gap: 1em;
+  }
+  
+  .footer {
+    background-color: #222;
+    color: white;
+    padding: 2em 1em;
+    text-align: center;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+  }
+  
+  .footer-content {
+    text-align: center;
+  }
+  
+  .footer-content p {
+    margin: 0;
+    font-size: 1em;
+  }
+ 
+  .footer-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5em;
+    padding: 0;
+    margin: 1em 0 0 0;
+  }
+  
+  .footer-links li {
+    display: inline;
+  }
+  
+  .footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9em;
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline;
+    color: #ff6347;
+  }
+  
+  .footer-social {
+    display: flex;
+    gap: 1em;
+  }
+  
+  .social-icon {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    
+    transition: transform 0.2s ease;
+  }
+  
+  .social-icon:hover {
+    transform: scale(1.1);
+    filter: brightness(0.8) invert(1);
+  }
+  
+  /* Responsive Footer Adjustments */
+  @media screen and (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .footer-links {
+      flex-direction: column;
+      gap: 0.5em;
+    }
+  
+    .footer-social {
+      flex-direction: column;
+      gap: 0.5em;
+    }
+  }
+  
+  
+  /* About section styles */
+  .about-section {
+    padding: 100px 2em;
+    background-color: #f7f7f7;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .text-content {
+    flex: 1;
+    padding-right: 2em;
+  }
+  
+  .text-content h2 {
+    font-size: 2.5em;
+    margin-bottom: 1em;
+    color: #333;
+  }
+  
+  .text-content p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #555;
+  }
+  
+  .image-content {
+    flex: 1;
+  }
+  
+  .image-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media screen and (max-width: 1024px) {
+    .container {
+      flex-direction: column; /* Stack text and image vertically */
+      text-align: center;
+    }
+  
+    .text-content {
+      padding-right: 0;
+    }
+  
+    .text-content h2 {
+      font-size: 2.2em; /* Adjust title size on medium screens */
+    }
+  
+    .image-content img {
+      max-width: 80%; /* Make the image smaller on medium screens */
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .nav-links {
+      display: none; /* Hide the nav links by default */
+      flex-direction: column;
+      align-items: center;
+      margin-top: 1em;
+      width: 100%;
+      padding: 1em 0;
+      background-color: rgba(0, 0, 0, 0.9);
+    }
+  
+    .nav-links.show {
+      display: flex; /* Show the nav links when toggled */
+    }
+  
+    .nav-links a {
+      padding: 1em;
+      text-align: center;
+    }
+  
+    .hamburger {
+      display: flex; /* Show the hamburger icon */
+    }
+  
+    .container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .text-content h2 {
+      font-size: 2em;
+    }
+  
+    .image-content img {
+      width: 100%;
+      max-width: 400px;
+    }
+  }
+
+  
+  @media screen and (max-width: 480px) {
+    .text-content p {
+      font-size: 1em; /* Adjust paragraph text size for small screens */
+    }
+  
+    .image-content img {
+      max-width: 100%; /* Ensure the image is full-width on very small screens */
+    }
+  
+    .footer {
+      padding: 0.5em; /* Adjust footer padding for small screens */
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .navbar {
+      background-color: transparent; /* Remove background color */
+    }
+  }
+  /* General styling */
+  .container {
+    display: block;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .text-content {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #333;
+    text-align: justify; /* Justify text alignment */
+  }
+  
+  /* Image styling */
+  .image-content img {
+    float: left; /* Float image to the left */
+    margin: 0 1em 1em 0; /* Add spacing around the image */
+    width: 30%; /* Set image width */
+    border-radius: 10px; /* Optional: rounded corners */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional: shadow effect */
+  }
+  .image-contentr img {
+    float: right; /* Float image to the left */
+    margin: 0 1em 1em 0.4em; /* Add spacing around the image */
+    width: 30%; /* Set image width */
+    border-radius: 10px; /* Optional: rounded corners */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional: shadow effect */
+  }
+  
+  /* Responsive adjustments */
+  @media screen and (max-width: 768px) {
+    .image-content img {
+      float: none; /* Remove float for smaller screens */
+      display: block;
+      margin: 0 auto 1em auto; /* Center the image */
+      width: 80%; /* Reduce image size for small screens */
+    }
+    .image-contentr img {
+      float: none; /* Remove float for smaller screens */
+      display: block;
+      margin: 0 auto 1em auto; /* Center the image */
+      width: 80%; 
+    }
+    .text-content {
+      text-align: justify; /* Justify text for smaller screens too */
+    }
+  }

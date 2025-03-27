@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>सम्पर्क जानकारी</title>
+  <link rel="icon" type="image/png" href="Nepal_Karnali_Pradesh.png">
+  <link rel="stylesheet" href="contactN.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="navbar">
+    <nav>
+      <!-- Hamburger Icon -->
+      <div class="hamburger" id="hamburger-icon">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      
+      <!-- Navigation Links -->
+      <ul class="nav-links" id="nav-links">
+        <li><a href="homeN.html">पहिलो पृष्ठ</a></li>
+        <li><a href="aboutN.html">हाम्रोबारे</a></li>
+        <li><a href="ProjectRepoN.html">परियोजना प्रतिवेदन</a></li>
+        <li><a href="ContactN.html">सम्पर्क</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <div class="contact-info">
+          <h2>सम्पर्क जानकारी</h2>
+          <div class="contact-details">
+            <p><i class="fas fa-envelope"></i> <strong>इमेल:</strong> <a href="mailto:purnaacharyaa@yahoo.com">purnaacharyaa@yahoo.com</a></p>
+            <p><i class="fas fa-phone"></i> <strong>फोन:</strong> +९७७-९८४९०२६९१९</p>
+            <p><i class="fas fa-map-marker-alt"></i> <strong>ठेगाना:</strong> जुम्ला, हिम गाउँपालिका</p>
+            <p><i class="fab fa-facebook"></i> <strong>फेसबुक:</strong> <a href="https://www.facebook.com/profile.php?id=100012873480356" target="_blank">पूर्ण आचार्य</a></p>
+          </div>
+        </div>
+    
+        <!-- Image Section with Project Director Name -->
+        <div class="image-container">
+          <img src="purna.jpg" alt="परियोजना निर्देशक">
+          <div class="caption">
+            <p><strong>परियोजना निर्देशक: पूर्ण प्रसाद आचार्य</strong></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <p>&copy; २०२४ विस्तृत परियोजना प्रतिवेदनको अवधारणात्मक योजना। सर्वाधिकार सुरक्षित।</p>
+
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    // Toggle navigation links visibility when clicking on the hamburger menu
+    document.getElementById('hamburger-icon').addEventListener('click', function() {
+      const navLinks = document.getElementById('nav-links');
+      navLinks.classList.toggle('show');
+    });
+  </script>
+</body>
+</html>

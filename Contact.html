@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="Nepal_Karnali_Pradesh.png">
+  <title>Contact</title>
+  <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="navbar">
+    <nav>
+      <!-- Hamburger Icon -->
+      <div class="hamburger" id="hamburger-icon">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      
+      <!-- Navigation Links -->
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="ProjectRepo.html">Project Repo</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <div class="contact-info">
+        <h2>Contact Information</h2>
+        <div class="contact-details">
+          <p><i class="fas fa-envelope"></i> <strong>Email:</strong> <a href="mailto:purnaacharyaa@yahoo.com">purnaacharyaa@yahoo.com</a></p>
+          <p><i class="fas fa-phone"></i> <strong>Phone:</strong> +977-9849026919</p>
+          <p><i class="fas fa-map-marker-alt"></i> <strong>Address:</strong> Jumla, Hima Rural</p>
+          <p><i class="fab fa-facebook"></i> <strong>Facebook:</strong> <a href="https://www.facebook.com/profile.php?id=100012873480356" target="_blank">Purna Acharya</a></p>
+        </div>
+      </div>
+
+      <!-- Image Section with Project Director Name -->
+      <div class="image-container">
+        <img src="purna.jpg" alt="Project Director">
+        <div class="caption">
+          <p><strong>Project Director: Purna Prasad Acharya</strong></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <p>&copy; 2024 Conceptual Plan For Detailed Project Repo. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    // Toggle navigation links visibility when clicking on the hamburger menu
+    document.getElementById('hamburger-icon').addEventListener('click', function() {
+      const navLinks = document.getElementById('nav-links');
+      navLinks.classList.toggle('show');
+    });
+  </script>
+</body>
+</html>

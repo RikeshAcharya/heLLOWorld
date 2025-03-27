@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>विस्तृत परियोजना प्रतिवेदनको अवधारणात्मक योजना</title>
+  <link rel="icon" type="image/png" href="Nepal_Karnali_Pradesh.png">
+  <link rel="stylesheet" href="styleN.css">
+  <style>
+    /* Styles for the English button */
+    .english-btn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 12px;
+      padding: 5px 10px;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      z-index: 1000;
+    }
+    .english-btn:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <!-- शीर्षक -->
+  <header class="navbar" id="navbar">
+    <div class="hamburger-menu" id="hamburger-menu">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+    <br>
+    <nav>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="homeN.html">पहिलो पृष्ठ</a></li>
+        <li><a href="aboutN.html">हाम्रोबारे</a></li>
+        <li><a href="ProjectRepoN.html">परियोजना प्रतिवेदन</a></li>
+        <li><a href="ContactN.html">सम्पर्क</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- English button -->
+  <button class="english-btn" onclick="location.href='/English Project/home.html';">
+    English
+  </button>
+
+  <!-- पूर्ण स्क्रीन भिडियोसहितको स्वागत खण्ड -->
+  <section id="home" class="video-section">
+    <video autoplay muted loop class="background-video">
+      <source src="JumlaAcharya.mp4" type="video/mp4">
+    </video>
+    <div class="video-overlay">
+      <h1>कर्णाली-जुम्ला</h1>
+      <h1>विस्तृत परियोजना प्रतिवेदनको अवधारणात्मक योजना</h1>
+    </div>
+  </section>
+
+  <!-- तस्बिर ग्यालरी -->
+  <section class="gallery">
+    <h2>फोटो ग्यालरी</h2>
+    <div class="image-container">
+      <img src="yartsagunbu-hunt.jpg" alt="तस्बिर १">
+      <img src="lake.jpg" alt="तस्बिर २">
+      <img src="yarsagumba.jpg" alt="तस्बिर ३">
+    </div>
+  </section>
+
+  <!-- पाद लेख -->
+  <footer class="footer">
+    <p>&copy; २०२४ विस्तृत परियोजना प्रतिवेदनको अवधारणात्मक योजना। सबै अधिकार सुरक्षित छ।</p>
+  </footer>
+
+  <!-- जाभास्क्रिप्ट -->
+  <script>
+    // स्क्रोल गर्दा टाँसिने नेभबार
+    window.addEventListener('scroll', function () {
+      const navbar = document.getElementById('navbar');
+      navbar.classList.toggle('scrolled', window.scrollY > 50);
+
+      // स्क्रोल गर्दा ह्याम्बर्गर मेनु बन्द गर्नुहोस्
+      const navLinks = document.getElementById('nav-links');
+      if (navLinks.classList.contains('active')) {
+        navLinks.classList.remove('active');
+      }
+    });
+
+    // ह्याम्बर्गर मेनु टगल
+    document.getElementById('hamburger-menu').addEventListener('click', function () {
+      const navLinks = document.getElementById('nav-links');
+      navLinks.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
